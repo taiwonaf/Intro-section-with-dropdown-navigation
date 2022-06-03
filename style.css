@@ -28,7 +28,7 @@ body {
 .attribution {
     margin-top: auto;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--Almost-Black);
 
 }
@@ -244,9 +244,9 @@ main {
     display: none;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 800px) {
     body {
-        height: 900px;
+        height: 850px;
         position: relative;
     }
     main {
@@ -260,10 +260,14 @@ main {
 
     .left {
         margin: 0px;
-        padding: 0px;
+        padding: 0px 20px;
         text-align: center;
         width: 100%;
         align-items: center;
+    }
+
+    .brands img {
+        width: 60px;
     }
 
     .left p {
@@ -312,10 +316,51 @@ main {
         flex-direction: column;
         right: 0;
         top: 0;
+        max-width: 65vw;
+        align-items: flex-start;
+        margin-top: 90px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .active .nav-items a {
+        margin: 0px;
+        display: inline-block;
+        padding: 15px;
+    }
+
+    .active .nav-items .nav-right {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .active .nav-items .nav-right li {
+        align-self: center;
+    }
+
+    .active .nav-items .nav-right li a {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .active .nav-items .nav-right li.register{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .active .nav-items li.dropdown {
+        padding: 0px;
+    }
+
+    .active ul {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .hamburger {
         display: flex;
+        transition: ease-in-out 0.5s;
     }
 
     nav {
@@ -339,6 +384,7 @@ main {
         top: 0;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.697);
+        transition: 0.5s;
     }
     
     .active .nav-background {
@@ -349,5 +395,6 @@ main {
         bottom: 0;
         top: 0;
         background-color: white;
+        transition: 0.5s;
     }
 }
