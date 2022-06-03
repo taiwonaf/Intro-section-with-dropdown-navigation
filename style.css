@@ -316,11 +316,15 @@ main {
         flex-direction: column;
         right: 0;
         top: 0;
+        bottom: 0;
         max-width: 65vw;
         align-items: flex-start;
-        margin-top: 90px;
+        justify-content: flex-start;
+        padding-top: 90px;
         padding-left: 30px;
         padding-right: 30px;
+        background-color: white;
+        transition: all ease-in-out 0.8s;
     }
 
     .active .nav-items a {
@@ -386,8 +390,13 @@ main {
         background-color: rgba(0, 0, 0, 0.697);
         transition: 0.5s;
     }
+
+    .nav-items .nav-left li.dropdown:hover .drop-content {
+        position: static;
+        box-shadow: none;
+    }
     
-    .active .nav-background {
+    /* .active .nav-background {
         display: block;
         position: absolute;
         right: 0;
@@ -396,5 +405,5 @@ main {
         top: 0;
         background-color: white;
         transition: 0.5s;
-    }
+    } */
 }
