@@ -1,13 +1,7 @@
-// const company = document.getElementById("company");
-// const features = document.getElementById("features");
+const navItems = document.getElementById("nav-items");
+const hamburger = document.getElementById("hamburger");
 
-
-// company.onmouseover = () => {
-//     const dropPar = company.parentElement
-//     dropPar.classList.toggle("active");
-// }
-
-// features.onmouseover = () => {
-//     const dropPar = features.parentElement
-//     dropPar.classList.toggle("active");
-// }
+hamburger.addEventListener("click", () => {
+    const hampar = hamburger.parentElement;
+    hampar.classList.toggle("active");
+})
